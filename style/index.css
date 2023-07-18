@@ -141,6 +141,12 @@ border: none;
 .image-section img{
     width: 80%;
 }
+
+
+main{
+    max-width: 1400px;
+    max-height: 70vh;
+}
 /* Responsive style for  mobile device setup */
 
 @media screen and (max-width: 576px) {
