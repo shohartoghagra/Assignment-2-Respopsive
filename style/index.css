@@ -11,10 +11,11 @@ nav {
 .nav-container {
   display: flex;
   max-width: 1400px;
-  height: 50%;
+  max-height: 50%;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
- justify-content: space-between;
+  justify-content: space-between;
 }
 
 .nav-menu-section {
@@ -32,7 +33,7 @@ nav {
   align-items: center;
   height: 40px;
   width: 80px;
-  /* margin-right: 20px; */
+  margin-right: 20px;
   object-fit: cover;
 }
 .nav-title {
@@ -52,6 +53,7 @@ nav {
   font-size: 1.5rem;
   font-weight: 500;
   text-decoration: none;
+  margin-top: 20px;
 }
 .nav-btn {
   border: none;
@@ -66,107 +68,119 @@ nav {
   font-size: 20px;
 }
 /* Banner section start from here */
-.banner-section{
-
-    display: flex;
-    max-height:80% ;
-    max-width: 1400px;
-background-image: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+.banner-section {
+  display: flex;
+  max-height: 80%;
+  max-width: 50%;
+  background-image: linear-gradient(
+    223deg,
+    rgba(140, 87, 238, 0.03) 0%,
+    rgba(241, 68, 174, 0.03) 100%
+  );
 }
 
-.banner-section{
-    padding: 40px 240px;
-    justify-content: center;
-    margin: 0 auto;
-    justify-content: space-evenly;
+.banner-section {
+  padding: 40px 240px;
+  justify-content: center;
+  margin: 0 auto;
+  justify-content: space-evenly;
 }
 
-.banner-section{
-    text-align: center;
-    align-items: center;
+.banner-section {
+  text-align: center;
+  align-items: center;
 }
-.banner-title{
-color: #0B0223;
-font-size: 3rem;
-font-weight: 600;
-text-align: center;
-}
-
-.banner-text-style{
-    text-align: center;
-    font-size: 50px;
-    font-weight: 700; 
-    margin-top: 30px;   
+.banner-title {
+  color: #0b0223;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
 }
 
-.banner-text-style{
-    background: linear-gradient(190deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-}
-.banner-description{
-    color: #534C64;
-   margin-bottom: 20px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-.banner-btn{
-    justify-content: center;
-    align-items: center;
-}
-.btn-one{
-text-align: center;
-color: #FFF;
-font-size: 20px;
-width: 160px;
-height: 60px;
-font-weight: 600;
-border-radius: 40px;
-background-image: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
-border: none;
+.banner-text-style {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 30px;
 }
 
-.btn-two{
-height: 70px;
-width: 190px;
-padding: 21px 40px;
-gap: 20px;
-border-radius: 3rem;
-background: #4EC5F7;
-color: white;
-font-size: 1.25rem;
-border: none;
+.banner-text-style {
+  background: linear-gradient(190deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.image-section img{
-    width: 80%;
+.banner-description {
+  color: #534c64;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.banner-btn {
+  justify-content: center;
+  align-items: center;
+}
+.btn-one {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  width: 160px;
+  height: 60px;
+  font-weight: 600;
+  border-radius: 40px;
+  background-image: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  border: none;
+  margin-bottom: 20px;
 }
 
+.btn-two {
+  height: 70px;
+  width: 190px;
+  padding: 21px 40px;
+  gap: 20px;
+  border-radius: 3rem;
+  background: #4ec5f7;
+  color: white;
+  font-size: 1.25rem;
+  border: none;
+  margin-bottom: 20px;
+}
+.image-section img {
+  width: 80%;
+}
 
-main{
-    max-width: 1400px;
-    max-height: 70vh;
+main {
+  max-width: 1400px;
+  max-height: 70vh;
 }
 /* Responsive style for  mobile device setup */
 
 @media screen and (max-width: 576px) {
-    .nav-container,
-    .logo-section{
-     flex-direction: column;
-     
-      }
-      .nav-menu-section{
-       flex-direction: column;
-       margin-top: 50px;
-       height: 10px;
-      }
+  .logo-section {
+    flex-direction: column;
+  }
 
-.nav-title {
+  .nav-container {
+    padding: 0px 0px 0px 200px;
+    flex-direction: column;
+  }
+
+  .nav-menu-section {
+    flex-direction: column;
+    margin-top: 50px;
+    height: 10px;
+  }
+
+  .nav-title {
     font-size: 30px;
     margin-top: 10px;
+  }
+
+  .banner-section,
+  .image-section img {
+    width: 50%;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
 }
-
-
-
-}    
