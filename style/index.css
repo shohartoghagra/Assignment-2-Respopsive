@@ -245,7 +245,42 @@ border: 1px solid;
   right: 50px;
 }
   
+/* play store games section start from here */
+.play-store-section{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%); 
+}
 
+
+.play-store-section{
+padding: 50px ;
+max-width: 1400px;
+max-height: 100px;
+}
+.games-title{
+  color: #0B0223;
+  font-size: 20px;
+  font-weight: 600;
+ 
+}
+.games-item{
+gap: 10px;
+display: flex;
+align-items: center;
+}
+
+.games-item img{
+  width:50px;
+  
+}
+
+.game-item{
+color: #0B0223;
+font-size: 20px;
+font-weight: 600;
+
+  }
 /* Responsive style for  mobile device setup */
 
 @media screen and (max-width: 576px) {
@@ -289,3 +324,5 @@ border: 1px solid;
     
 
 }
+
+
