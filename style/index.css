@@ -195,6 +195,37 @@ max-width: 400px;
   gap: 10px;
 }
 
+
+.online-images-container:hover{
+color: #8758f1;
+
+}
+
+
+/* play instantly section start from here */
+.play-instantly-container{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.play-instantly-container img{
+ max-width: 630px;
+ max-height: 650px;
+}
+.play-text-container{
+  width: 25%;
+  margin: 0 auto;
+}
+.cover-img img{
+  width: 40%;
+  position: relative;
+  bottom: 250px;
+  right: 100px;
+}
+  
+
+
 /* Responsive style for  mobile device setup */
 
 @media screen and (max-width: 576px) {
