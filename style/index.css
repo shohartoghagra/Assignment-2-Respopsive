@@ -16,6 +16,8 @@ nav {
   align-items: center;
   margin: 0 auto;
   justify-content: space-between;
+  border: 2px solid tomato;
+
 }
 
 .nav-menu-section {
@@ -68,6 +70,13 @@ nav {
   font-size: 20px;
 }
 /* Banner section start from here */
+
+.banner-container{
+max-width: 1400px;
+max-height: 50%;
+border: 2px solid red;
+}
+
 
 .banner-section {
  display: flex;
@@ -126,7 +135,7 @@ nav {
   border-radius:40px;
   background-image: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
   border: none;
-  /* margin-bottom: 20px; */
+  margin-bottom: 20px;
 }
 
 .btn-two {
@@ -152,6 +161,9 @@ main {
 
 /* online games funny section start from here */
 
+.funny-section{
+  border: 2px solid salmon;
+}
 .online-game-title {
 text-align: center;
 margin-bottom: 20px;
@@ -203,28 +215,36 @@ color: #8758f1;
 
 
 /* play instantly section start from here */
+.play-instantly-section{
+  max-width: 1400px;
+
+
+}
 .play-instantly-container{
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 align-items: center;
+justify-content: center;
+border: 1px solid;
 }
 
 .play-instantly-container img{
- max-width: 630px;
- max-height: 650px;
+ max-width: 400px;
+
 }
 .play-text-container{
+  align-items: center;
   width: 25%;
   margin: 0 auto;
 }
+
 .cover-img img{
   width: 40%;
   position: relative;
-  bottom: 250px;
-  right: 100px;
+  bottom: 130px;
+  right: 50px;
 }
   
-
 
 /* Responsive style for  mobile device setup */
 
@@ -261,5 +281,11 @@ align-items: center;
     grid-template-columns:1fr;
     gap: 30px;
   }
+
+  .play-instantly-container{
+ flex-direction: column;
+
+    }
+    
 
 }
