@@ -380,3 +380,77 @@ nav {
     margin: 0 auto;
   }
 }
+
+
+/* Responsive style for  tablet and other device setup */
+
+@media screen and (min-width:577px) and (max-width:960px) {
+  .logo-section {
+   flex-direction:row;
+   width: fit-content;
+  }
+  .nav-container {
+    flex-direction:row;
+  }
+
+
+  .nav-menu-section {
+    flex-direction: row;
+  }
+
+  .nav-title {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  .banner-section,
+  .image-section img {
+    width: 60%;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .online-images-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+  }
+
+  .play-instantly-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  /* play store games section start from here */
+  .games-item {
+    flex-direction: row;
+  }
+  .play-store-section {
+    grid-template-columns: repeat(4,1fr);
+    gap: 1px;
+  }
+  /* footer section responsive */
+  .your-choose-section {
+    flex-direction: row;
+  }
+
+  .term-condition {
+    flex-direction: row;
+  }
+  .logo-section {
+    flex-direction: row;
+    width: fit-content;
+  }
+
+  .footer-social {
+    flex-direction: row;
+    width: fit-content;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .play-instantly-container img {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+}
