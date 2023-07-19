@@ -23,7 +23,7 @@ nav {
 .nav-menu-section {
   display: flex;
   width: 50%;
-  justify-content: space-around;
+  justify-content:space-between;
 }
 .logo-section {
   align-items: center;
@@ -57,7 +57,7 @@ nav {
   text-decoration: none;
   margin-top: 20px;
 }
-.nav-btn {
+.nav-btn{
   border: none;
   padding: 8px;
   border-radius: 5px;
@@ -72,7 +72,7 @@ nav {
 /* Banner section start from here */
 
 .banner-container{
-max-width: 1400px;
+/* max-width: 1400px; */
 max-height: 50%;
 border: 2px solid red;
 }
@@ -81,8 +81,7 @@ border: 2px solid red;
 .banner-section {
  display: flex;
  align-items: center; 
-
-  background-image: linear-gradient(223deg,rgba(140, 87, 238, 0.03) 0%,rgba(241, 68, 174, 0.03) 100% );
+background-image: linear-gradient(223deg,rgba(140, 87, 238, 0.03) 0%,rgba(241, 68, 174, 0.03) 100% );
 }
 
 .banner-section {
@@ -100,10 +99,7 @@ border: 2px solid red;
   font-weight: 600;
   text-align: center;
 }
-.text-container{
- /* width: 50%;
- margin: 0 auto; */
-}
+
 .banner-text-style {
   text-align: center;
   font-size: 50px;
@@ -155,8 +151,8 @@ margin: 0 auto;
 }
 
 main {
-  max-width: 1400px;
-  max-height: 80vh;
+  /* max-width: 1400px;
+  max-height: 80vh; */
 }
 
 /* online games funny section start from here */
@@ -192,7 +188,7 @@ font-weight: 700;
 
 }
 .online-games-container {
-  padding: 240 120px;
+  /* padding: 240 120px; */
   width: 50%;
   margin: 0 auto;
   justify-content: center;
@@ -208,41 +204,34 @@ max-width: 400px;
 }
 
 
-.online-images-container:hover{
-color: #8758f1;
-
-}
 
 
 /* play instantly section start from here */
-.play-instantly-section{
-  max-width: 1400px;
-
-
-}
 .play-instantly-container{
 display: flex;
-justify-content: space-between;
+justify-content:space-around;
 align-items: center;
 justify-content: center;
-border: 1px solid;
+
 }
 
 .play-instantly-container img{
- max-width: 400px;
+ width: 50%;
 
 }
+
 .play-text-container{
   align-items: center;
   width: 25%;
   margin: 0 auto;
 }
 
+
 .cover-img img{
-  width: 40%;
+  width: 200px;
   position: relative;
-  bottom: 130px;
-  right: 50px;
+  bottom: 200px;
+  right: 100px;
 }
   
 /* play store games section start from here */
@@ -250,19 +239,19 @@ border: 1px solid;
   display: grid;
   grid-template-columns: repeat(5,1fr);
   background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%); 
+  gap: 10px;
 }
 
-
 .play-store-section{
-padding: 50px ;
-max-width: 1400px;
-max-height: 100px;
+
+  /* height: 50vh;  */
+/* padding: 20px; */
+border: 2px solid tomato;
 }
 .games-title{
   color: #0B0223;
   font-size: 20px;
   font-weight: 600;
- 
 }
 .games-item{
 gap: 10px;
@@ -271,16 +260,81 @@ align-items: center;
 }
 
 .games-item img{
-  width:50px;
-  
+  width:50px;  
 }
-
 .game-item{
 color: #0B0223;
 font-size: 20px;
 font-weight: 600;
+}
 
-  }
+
+
+/* Footer section start from here */
+.footer-container {
+  /* max-width: 1400;
+  min-height: 50vh; */
+  background-color: #0B0223;
+
+}
+.footer-title{
+  color: white;
+}
+.color-white{
+
+ color: #FF42A5;
+}
+.logo-section{
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.your-choose-section{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center; 
+}
+.footer-title{
+color: #FFF;
+font-size: 45px;
+font-weight: 700;
+
+}
+.footer-text{
+color: #FFF;
+font-size: 18px;
+font-weight: 600;
+}
+.footer-social {
+display: flex;
+align-items: center;
+justify-content: center;
+/* justify-content: space-around; */
+/* padding: 0 20px; */
+width: 20%;
+margin: 0 auto;
+}
+
+.icon{
+  margin: 0 auto;
+  gap: 50px;
+  font-size: 30px;
+  color: floralwhite;
+}
+
+.term-condition{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.copy-write{
+  text-align: center;
+}
+
+
 /* Responsive style for  mobile device setup */
 
 @media screen and (max-width: 576px) {
@@ -295,8 +349,7 @@ font-weight: 600;
 
   .nav-menu-section {
     flex-direction: column;
-    /* margin-top: 50px;
-    height: 10px; */
+  
   }
 
   .nav-title {
@@ -318,11 +371,46 @@ font-weight: 600;
   }
 
   .play-instantly-container{
- flex-direction: column;
-
+  flex-direction: column;
+align-items: center;
     }
+/* play store games section start from here */
+    .games-item{
+  flex-direction: column;
     
+      }
+    .play-store-section{
+      grid-template-columns: 1fr;
+      gap: 1px;
+      }
+/* footer section responsive */
+.your-choose-section{
+  flex-direction: column;
+ 
+}
+
+.term-condition{
+flex-direction: column;
+
+ 
+}
+.logo-section {
+flex-direction: column;
+width: fit-content;
 
 }
 
+.footer-social {
+flex-direction: column;
+width: fit-content;
+margin: 0 auto;
+gap: 20px;
+  }
+  
 
+  .play-instantly-container img{
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+}
