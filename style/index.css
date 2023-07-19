@@ -3,6 +3,9 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+.nav-section {
+  background-color: #fff;
+}
 nav {
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
@@ -16,14 +19,12 @@ nav {
   align-items: center;
   margin: 0 auto;
   justify-content: space-between;
-  border: 2px solid tomato;
-
 }
 
 .nav-menu-section {
   display: flex;
   width: 50%;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 .logo-section {
   align-items: center;
@@ -57,7 +58,7 @@ nav {
   text-decoration: none;
   margin-top: 20px;
 }
-.nav-btn{
+.nav-btn {
   border: none;
   padding: 8px;
   border-radius: 5px;
@@ -71,17 +72,18 @@ nav {
 }
 /* Banner section start from here */
 
-.banner-container{
-/* max-width: 1400px; */
-max-height: 50%;
-border: 2px solid red;
+.banner-container {
+  max-height: 50%;
 }
 
-
 .banner-section {
- display: flex;
- align-items: center; 
-background-image: linear-gradient(223deg,rgba(140, 87, 238, 0.03) 0%,rgba(241, 68, 174, 0.03) 100% );
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+    223deg,
+    rgba(140, 87, 238, 0.03) 0%,
+    rgba(241, 68, 174, 0.03) 100%
+  );
 }
 
 .banner-section {
@@ -89,9 +91,7 @@ background-image: linear-gradient(223deg,rgba(140, 87, 238, 0.03) 0%,rgba(241, 6
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-   
 }
-
 
 .banner-title {
   color: #0b0223;
@@ -118,7 +118,6 @@ background-image: linear-gradient(223deg,rgba(140, 87, 238, 0.03) 0%,rgba(241, 6
   margin-bottom: 20px;
   font-size: 1rem;
   font-weight: 500;
-
 }
 
 .btn-one {
@@ -128,7 +127,7 @@ background-image: linear-gradient(223deg,rgba(140, 87, 238, 0.03) 0%,rgba(241, 6
   width: 150px;
   height: 50px;
   font-weight: 600;
-  border-radius:40px;
+  border-radius: 40px;
   background-image: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
   border: none;
   margin-bottom: 20px;
@@ -146,51 +145,43 @@ background-image: linear-gradient(223deg,rgba(140, 87, 238, 0.03) 0%,rgba(241, 6
   margin-bottom: 20px;
 }
 .image-section img {
-max-width:100%;
-margin: 0 auto;
+  max-width: 100%;
+  margin: 0 auto;
 }
-
 
 /* online games funny section start from here */
 
-.funny-section{
-  border: 2px solid salmon;
-}
 .online-game-title {
-text-align: center;
-margin-bottom: 20px;
-color: #0B0223;
-font-size: 48px;
-font-weight: 700;
-
-}
-.funny{
- background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-font-family: Work Sans;
-font-size: 48px;
-font-weight: 700;
-
-}
-.online-funny-description{
   text-align: center;
-  color: #534C64;
+  margin-bottom: 20px;
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 700;
+}
+.funny {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Work Sans;
+  font-size: 48px;
+  font-weight: 700;
+}
+.online-funny-description {
+  text-align: center;
+  color: #534c64;
   font-size: 1rem;
   font-weight: 300;
- justify-content: center;
- 
-
+  justify-content: center;
 }
 .online-games-container {
   width: 50%;
   margin: 0 auto;
   justify-content: center;
 }
-.funny-images-item img{
-max-height: 300px;
-max-width: 300px;
+.funny-images-item img {
+  max-height: 300px;
+  max-width: 300px;
 }
 .online-images-container {
   display: grid;
@@ -198,139 +189,126 @@ max-width: 300px;
   gap: 10px;
 }
 
-
-
-
 /* play instantly section start from here */
-.play-instantly-container{
-display: flex;
-justify-content:space-around;
-align-items: center;
-justify-content: center;
-
+.play-instantly-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
 }
 
-.play-instantly-container img{
- width: 50%;
-
+.play-instantly-container img {
+  width: 50%;
 }
 
-.play-text-container{
+.play-text-container {
   align-items: center;
   width: 25%;
   margin: 0 auto;
 }
 
-
-.cover-img img{
+.cover-img img {
   width: 200px;
   position: relative;
   bottom: 200px;
   right: 100px;
 }
-  
+
 /* play store games section start from here */
-.play-store-section{
+.play-store-section {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
-  background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%); 
+  grid-template-columns: repeat(5, 1fr);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
   gap: 10px;
 }
 
-.play-store-section{
-
-  /* height: 50vh;  */
-/* padding: 20px; */
-border: 2px solid tomato;
-}
-.games-title{
-  color: #0B0223;
+.games-title {
+  color: #0b0223;
   font-size: 20px;
   font-weight: 600;
 }
-.games-item{
-gap: 10px;
-display: flex;
-align-items: center;
+.games-item {
+  gap: 10px;
+  display: flex;
+  align-items: center;
 }
 
-.games-item img{
-  width:50px;  
+.games-item img {
+  width: 50px;
 }
-.game-item{
-color: #0B0223;
-font-size: 20px;
-font-weight: 600;
+.game-item {
+  color: #0b0223;
+  font-size: 20px;
+  font-weight: 600;
 }
-
-
 
 /* Footer section start from here */
 .footer-container {
   padding: 10px;
   min-height: 50vh;
-  background-color: #0B0223;
-
+  background-color: #0b0223;
 }
-.footer-title{
+.footer-title {
   color: white;
 }
-.color-white{
-
- color: #FF42A5;
+.color-white {
+  color: #ff42a5;
 }
-.logo-section{
+.logo-section {
   justify-content: center;
   width: 50%;
   margin: 0 auto;
 }
-.your-choose-section{
+.your-choose-section {
   display: flex;
   gap: 20px;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
-.footer-title{
-color: #FFF;
-font-size: 45px;
-font-weight: 700;
-
+.footer-title {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
 }
-.footer-text{
-color: #FFF;
-font-size: 18px;
-font-weight: 600;
+.footer-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
 }
 .footer-social {
-display: flex;
-align-items: center;
-justify-content: center;
-width: 20%;
-margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  margin: 0 auto;
 }
 
-.footer-social,.icon {
-gap: 20px;
+.footer-social,
+.icon {
+  gap: 20px;
 }
-  
-.icon{
+
+.icon {
   margin: 0 auto;
   gap: 50px;
   font-size: 30px;
   color: floralwhite;
 }
 
-.term-condition{
+.term-condition {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
 
-.copy-write{
+.copy-write {
   text-align: center;
 }
-
 
 /* Responsive style for  mobile device setup */
 
@@ -340,13 +318,11 @@ gap: 20px;
   }
 
   .nav-container {
-    
     flex-direction: column;
   }
 
   .nav-menu-section {
     flex-direction: column;
-  
   }
 
   .nav-title {
@@ -360,54 +336,47 @@ gap: 20px;
     flex-direction: column;
     margin-bottom: 20px;
   }
-  
+
   .online-images-container {
     display: grid;
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
     gap: 30px;
   }
 
-  .play-instantly-container{
-  flex-direction: column;
-align-items: center;
-    }
-/* play store games section start from here */
-    .games-item{
-  flex-direction: column;
-    
-      }
-    .play-store-section{
-      grid-template-columns: 1fr;
-      gap: 1px;
-      }
-/* footer section responsive */
-.your-choose-section{
-  flex-direction: column;
- 
-}
-
-.term-condition{
-flex-direction: column;
-
- 
-}
-.logo-section {
-flex-direction: column;
-width: fit-content;
-
-}
-
-.footer-social {
-flex-direction: column;
-width: fit-content;
-margin: 0 auto;
-gap: 20px;
+  .play-instantly-container {
+    flex-direction: column;
+    align-items: center;
   }
-  
+  /* play store games section start from here */
+  .games-item {
+    flex-direction: column;
+  }
+  .play-store-section {
+    grid-template-columns: 1fr;
+    gap: 1px;
+  }
+  /* footer section responsive */
+  .your-choose-section {
+    flex-direction: column;
+  }
 
-  .play-instantly-container img{
+  .term-condition {
+    flex-direction: column;
+  }
+  .logo-section {
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .footer-social {
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .play-instantly-container img {
     width: fit-content;
     margin: 0 auto;
   }
-
 }
