@@ -389,7 +389,7 @@ nav {
   .online-images-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 10px;
   }
 
   .play-instantly-container {
@@ -433,14 +433,15 @@ nav {
     margin-bottom: 20px;
   }
   .cover-img img {
-    width: 50px;
+  
+    max-width: 190px;
     position: static;
   }
 }
 
 /* Responsive style for  tablet and other device setup */
 
-@media screen and (min-width: 576px) and (max-width: 960px) {
+@media screen and (min-width: 577px) and (max-width: 960px) {
   .logo-section {
     flex-direction: row;
     width: fit-content;
@@ -470,7 +471,7 @@ nav {
 
   .online-images-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
   }
 
@@ -484,6 +485,11 @@ nav {
   }
   .play-store-section {
     grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+  }
+
+  .play-store-section {
+    grid-template-columns: repeat(3, 1fr);
     gap: 1px;
   }
   /* footer section responsive */
@@ -507,8 +513,8 @@ nav {
   }
 
   .play-instantly-container img {
-    width: fit-content;
-    margin: 0 auto;
+    
+    margin: 30px auto;
   }
   .banner-section {
     justify-content: center;
