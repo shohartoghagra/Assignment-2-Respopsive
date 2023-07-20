@@ -58,7 +58,7 @@ nav {
   text-decoration: none;
   margin-top: 20px;
 }
-.nav-btn{
+.nav-btn {
   display: flex;
   align-items: center;
   align-items: center;
@@ -72,7 +72,7 @@ nav {
   font-size: 18px;
 }
 .youtube-icon {
- padding: 0px 5px;
+  padding: 0px 5px;
   color: red;
   font-size: 20px;
 }
@@ -195,26 +195,24 @@ nav {
   gap: 10px;
 }
 
-.funny-images-item{
-position: relative;
-
+.funny-images-item {
+  position: relative;
 }
-.position-icon{
+.position-icon {
   transition: 0.6s;
   opacity: 0;
   position: absolute;
-  left: 60px; 
-  bottom: 150px; 
+  left: 60px;
+  bottom: 150px;
 }
 
-.position-icon{
-
-margin: 0 auto;
-text-align: center;
-font-size: 20px;
-background: rgba(7, 244, 54, 0.806);
+.position-icon {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  background: rgba(7, 244, 54, 0.806);
 }
-.size{
+.size {
   font-size: 70px;
   color: bisque;
   background-color: tomato;
@@ -222,15 +220,13 @@ background: rgba(7, 244, 54, 0.806);
   border-radius: 50%;
 }
 
-.position-icon:hover{
-  color:rgba(5, 5, 5, 0.896);
+.position-icon:hover {
+  color: rgba(5, 5, 5, 0.896);
   border-radius: 20%;
- 
+
   font-weight: bolder;
   opacity: 1;
-  }
-  
-
+}
 
 /* play instantly section start from here */
 .play-instantly-container {
@@ -258,15 +254,15 @@ background: rgba(7, 244, 54, 0.806);
   right: 100px;
 }
 
-
 /* play store games section start from here */
-.play-store-section{
+.play-store-section {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   background: linear-gradient(
     90deg,
     rgba(255, 66, 165, 0.03) 0%,
-    rgba(255, 66, 165, 0.03) 100%);
+    rgba(255, 66, 165, 0.03) 100%
+  );
   gap: 10px;
   padding: 20px;
 }
@@ -291,13 +287,11 @@ background: rgba(7, 244, 54, 0.806);
   font-weight: 600;
 }
 
-.games-item:hover{
-border: 1px solid red;
-border-radius: 30px;
-width: 250px;
+.games-item:hover {
+  border: 1px solid red;
+  border-radius: 30px;
+  width: 250px;
 }
-
-
 
 /* Footer section start from here */
 .footer-container {
@@ -369,9 +363,9 @@ width: 250px;
   .logo-section {
     flex-direction: column;
   }
-.nav-btn{
-margin: 0 auto;
-}
+  .nav-btn {
+    margin: 0 auto;
+  }
   .nav-container {
     flex-direction: column;
   }
@@ -402,7 +396,7 @@ margin: 0 auto;
     flex-direction: column;
     align-items: center;
   }
-  .play-text-container{
+  .play-text-container {
     margin: 0 auto;
   }
   /* play store games section start from here */
@@ -435,22 +429,29 @@ margin: 0 auto;
 
   .play-instantly-container img {
     width: 100%;
-    margin: 0 ;
+    margin: 0;
     margin-bottom: 20px;
+  }
+  .cover-img img {
+    width: 50px;
+    position: static;
   }
 }
 
 /* Responsive style for  tablet and other device setup */
 
-@media screen and (min-width:577px) and (max-width:960px) {
+@media screen and (min-width: 576px) and (max-width: 960px) {
   .logo-section {
-   flex-direction:row;
-   width: fit-content;
+    flex-direction: row;
+    width: fit-content;
   }
   .nav-container {
-    flex-direction:row;
+    flex-direction: row;
   }
-
+.banner-container{
+  padding: 10px;
+  max-width: 100%;
+}
   .nav-menu-section {
     flex-direction: row;
   }
@@ -469,20 +470,20 @@ margin: 0 auto;
 
   .online-images-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
   }
 
   .play-instantly-container {
     flex-direction: row;
-    align-items: center;
+   
   }
   /* play store games section start from here */
   .games-item {
     flex-direction: row;
   }
   .play-store-section {
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1px;
   }
   /* footer section responsive */
@@ -509,10 +510,13 @@ margin: 0 auto;
     width: fit-content;
     margin: 0 auto;
   }
-
-  .cover-img img{
-    width: 70%;
-    margin-left: 10px;
+  .banner-section {
+    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
   }
+  
+
 
 }
